@@ -170,7 +170,7 @@ describe('java unirest convert function for test collection', function () {
       line_no;
 
     it('should return a Tab indented snippet ', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         indentType: 'Tab',
         indentCount: 1
@@ -195,7 +195,7 @@ describe('java unirest convert function for test collection', function () {
     });
 
     it('should return snippet with setTimeouts function when timeout is set to non zero', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         requestTimeout: 1000
       };
@@ -211,7 +211,7 @@ describe('java unirest convert function for test collection', function () {
 
     it('should return snippet with setTimeouts function setting both ' +
             'connection and socket timeout to 0 when requestTimeout is set to 0', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         requestTimeout: 0
       };
@@ -227,7 +227,7 @@ describe('java unirest convert function for test collection', function () {
 
     it('should return snippet with disableRedirectHandling function for' +
             'follow redirect option set to false', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         followRedirect: false
       };
@@ -243,7 +243,7 @@ describe('java unirest convert function for test collection', function () {
 
     it('should include import statements, main class and print statements ' +
             'when includeBoilerplate is set to true', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         includeBoilerplate: true,
         indentType: 'Tab',
