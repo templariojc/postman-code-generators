@@ -152,7 +152,7 @@ describe('nodejs-request convert function', function () {
       line_no;
 
     it('should return a Tab indented snippet ', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         indentType: 'Tab',
         indentCount: 1
@@ -173,7 +173,7 @@ describe('nodejs-request convert function', function () {
     });
 
     it('should return snippet with timeout property when timeout is set to non zero', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         requestTimeout: 1000
       };
@@ -190,7 +190,7 @@ describe('nodejs-request convert function', function () {
 
     it('should return snippet with followRedirect property set to ' +
         'false for no follow redirect', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         followRedirect: false
       };
@@ -223,7 +223,7 @@ describe('nodejs-request convert function', function () {
     });
 
     it('should not fail for a random body mode', function () {
-      request = new sdk.Request(mainCollection.item[2].request);
+      request = new sdk.Request(mainCollection.item[3].request);
       request.body.mode = 'random';
       request.body[request.body.mode] = {};
 

@@ -195,7 +195,7 @@ describe('Powershell-restmethod converter', function () {
     var request,
       options;
     it('should add a TimeoutSec argument when timeout is set to non zero value', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         requestTimeout: 1000
       };
@@ -210,7 +210,7 @@ describe('Powershell-restmethod converter', function () {
     });
 
     it('should not add a TimeoutSec argument when timeout is set to 0', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         requestTimeout: 0
       };
@@ -225,7 +225,7 @@ describe('Powershell-restmethod converter', function () {
     });
 
     it('should add a MaximumRedirection set to 0 argument when followRedirect is not allowed', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         followRedirect: false
       };
@@ -240,7 +240,7 @@ describe('Powershell-restmethod converter', function () {
     });
 
     it('should not add a MaximumRedirection argument when followRedirect is allowed', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         followRedirect: true
       };
@@ -255,7 +255,7 @@ describe('Powershell-restmethod converter', function () {
     });
 
     it('should default to mode raw when body mode is some random value', function () {
-      request = new sdk.Request(mainCollection.item[2].request);
+      request = new sdk.Request(mainCollection.item[3].request);
       request.body.mode = 'random';
       request.body[request.body.mode] = {};
       options = {};

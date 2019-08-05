@@ -177,7 +177,7 @@ describe('csharp restsharp function', function () {
 
   describe('csharp-restsharp convert function', function () {
     it('should return expected snippet', function () {
-      var request = new sdk.Request(mainCollection.item[4].request),
+      var request = new sdk.Request(mainCollection.item[5].request),
         options = {
           indentCount: 1,
           indentType: 'Tab',

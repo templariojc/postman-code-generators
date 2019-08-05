@@ -148,7 +148,7 @@ describe('nodejs unirest convert function', function () {
     var request, reqObject, options, snippetArray, line_no;
 
     it('should return a Tab indented snippet ', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         indentType: 'Tab',
         indentCount: 1
@@ -169,7 +169,7 @@ describe('nodejs unirest convert function', function () {
     });
 
     it('should return snippet with timeout function when timeout is set to non zero', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         requestTimeout: 1000
       };
@@ -185,7 +185,7 @@ describe('nodejs unirest convert function', function () {
 
     it('should return snippet with followRedirect function having ' +
         'parameter false for no follow redirect', function () {
-      request = new sdk.Request(mainCollection.item[0].request);
+      request = new sdk.Request(mainCollection.item[1].request);
       options = {
         followRedirect: false
       };

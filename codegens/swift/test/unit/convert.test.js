@@ -143,7 +143,7 @@ describe('Swift Converter', function () {
   });
 
   describe('convert function', function () {
-    var request = new sdk.Request(mainCollection.item[0].request),
+    var request = new sdk.Request(mainCollection.item[1].request),
       snippetArray;
 
     const SINGLE_SPACE = ' '; // default indent type with indent count of 2

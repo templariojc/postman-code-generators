@@ -137,7 +137,7 @@ self = module.exports = {
       throw new Error('GoLang-Converter: callback is not valid function');
     }
     options = sanitizeOptions(options, self.getOptions());
-
+    isFile = false;
     var codeSnippet, indent, trim, timeout, followRedirect,
       bodySnippet = '',
       responseSnippet = '',

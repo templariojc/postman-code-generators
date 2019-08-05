@@ -150,7 +150,7 @@ describe('Python-http.client converter', function () {
   });
 
   describe('convert function', function () {
-    var request = new sdk.Request(mainCollection.item[0].request),
+    var request = new sdk.Request(mainCollection.item[1].request),
       snippetArray;
 
     const SINGLE_SPACE = ' ';
@@ -193,7 +193,7 @@ describe('Python-http.client converter', function () {
     });
 
     it('should generate snippet with requestTimeout option', function () {
-      var request = new sdk.Request(mainCollection.item[0].request);
+      var request = new sdk.Request(mainCollection.item[1].request);
       convert(request, { requestTimeout: 2000 }, function (error, snippet) {
         if (error) {
           expect.fail(null, null, error);
