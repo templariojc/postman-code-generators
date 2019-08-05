@@ -28,7 +28,8 @@
     "POST /post HTTP/1.1\nHost: postman-echo.com\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW\n\n----WebKitFormBoundary7MA4YWxkTrZu0gW\nContent-Disposition: form-data; name=\"file\"; filename=\"/some/path\"\n----WebKitFormBoundary7MA4YWxkTrZu0gW\n",
     "POST /post HTTP/1.1\nHost: postman-echo.com\n\n\n{}",
     "GET / HTTP/1.1\nHost: localhost:5050\n\n\n",
-    "GET /knockknock HTTP/1.1\nHost: localhost:5050\n\n\n"
+    "GET /knockknock HTTP/1.1\nHost: localhost:5050\n\n\n",
+    "POST /post HTTP/1.1\nHost: postman-echo.com\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW\n\n----WebKitFormBoundary7MA4YWxkTrZu0gW\nContent-Disposition: form-data; name=\"cool_file_name\"; filename=\"/home/travis/build/postmanlabs/postman-code-generators/check.js\"\n----WebKitFormBoundary7MA4YWxkTrZu0gW\n"
   ],
   "trimmedResult": [
     "POST /post HTTP/1.1\nHost: postman-echo.com\nContent-Type: application/x-www-form-urlencoded\n\nDuis posuere augue vel cursus pharetra. In luctus a ex nec pretium. Praesent neque quam, tincidunt nec leo eget, rutrum vehicula magna.\nMaecenas consequat elementum elit, id semper sem tristique et. Integer pulvinar enim quis consectetur interdum volutpat.!@#$%^&*()+POL:},'';,[;[;",

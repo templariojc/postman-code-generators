@@ -1316,6 +1316,34 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "formdata file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cool_file_name",
+							"type": "file",
+							"src": "/home/travis/build/postmanlabs/postman-code-generators/check.js"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://postman-echo.com/post",
+					"protocol": "http",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			}
 		}
 	],
 	"event": [
